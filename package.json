@@ -1,0 +1,47 @@
+{
+  "name": "timetable-app",
+  "version": "1.7.2",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test scripts/test-parser.mjs scripts/test-dates.mjs scripts/test-crop.mjs && node scripts/test-docs.mjs",
+    "test:parser": "tsc -p tsconfig.test.json && node --test scripts/test-parser.mjs",
+    "test:crop": "tsc -p tsconfig.test.json && node --test scripts/test-crop.mjs",
+    "test:docs": "tsc -p tsconfig.test.json && node scripts/test-docs.mjs",
+    "test:dates": "tsc -p tsconfig.test.json && node --test scripts/test-dates.mjs",
+    "verify": "expo export --platform web --output-dir .webcheck && node scripts/verify-island.mjs && node scripts/verify-semester-list.mjs && node scripts/verify-v160.mjs && node scripts/verify-v170.mjs && node scripts/verify-v171.mjs && node scripts/verify-v172.mjs",
+    "verify:apk": "node scripts/verify-apk.mjs",
+    "verify:island": "expo export --platform web --output-dir .webcheck && node scripts/verify-island.mjs",
+    "verify:list": "expo export --platform web --output-dir .webcheck && node scripts/verify-semester-list.mjs",
+    "verify:v160": "expo export --platform web --output-dir .webcheck && node scripts/verify-v160.mjs",
+    "verify:v170": "expo export --platform web --output-dir .webcheck && node scripts/verify-v170.mjs",
+    "verify:v171": "expo export --platform web --output-dir .webcheck && node scripts/verify-v171.mjs",
+    "verify:v172": "expo export --platform web --output-dir .webcheck && node scripts/verify-v172.mjs",
+    "export:web": "expo export --platform web"
+  },
+  "private": true,
+  "dependencies": {
+    "@expo/metro-runtime": "~6.1.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "^54.0.37",
+    "expo-file-system": "~19.0.24",
+    "expo-image-picker": "~17.0.11",
+    "expo-linear-gradient": "~15.0.8",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "babel-preset-expo": "~54.0.12",
+    "eas-cli": "^23.2.0",
+    "typescript": "~5.9.0"
+  }
+}

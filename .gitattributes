@@ -1,0 +1,18 @@
+# 统一换行符，避免 Windows/Linux 协作时整文件 diff
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.apk binary
+*.aab binary
+*.keystore binary
+*.tar.gz binary
+*.zip binary
+
+# GitHub 语言统计：把文档类归到 Markdown，避免它们压过源码
+docs/*.md linguist-documentation
+README.md linguist-documentation

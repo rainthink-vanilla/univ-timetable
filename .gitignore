@@ -1,0 +1,26 @@
+node_modules/
+.expo/
+dist/
+web-build/
+.test-build/
+.webcheck/
+*.log
+COMMIT_MSG.tmp
+# 构建产物不入库（57MB，用 EAS 重新构建即可）
+*.apk
+*.aab
+# 交接打包件与指纹清单不入库（均为派生产物，可由源码 + 打包命令重新生成）
+交接-*.zip
+交接-*.tar.gz
+交接-*.sha256.txt
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Personal timetable exports and local project handover notes
+private/
+memory/
+交接-v*/
+课表-*.md
+课表更新-*.md

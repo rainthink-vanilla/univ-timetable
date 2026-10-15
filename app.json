@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "大学课表",
+    "slug": "timetable-app",
+    "owner": "rainthink",
+    "version": "1.7.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1220"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.univtimetable"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B1220"
+      },
+      "package": "com.example.univtimetable",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "允许访问相册以选择背景图片或课表截图"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e25e1793-cc82-4084-af0f-4456f2f9ad08"
+      }
+    }
+  }
+}

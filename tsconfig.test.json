@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": ".test-build",
+    "rootDir": "src",
+    "noEmitOnError": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": [
+    "src/types.ts",
+    "src/theme.ts",
+    "src/constants.ts",
+    "src/utils/id.ts",
+    "src/utils/parse.ts",
+    "src/utils/timetableFile.ts",
+    "src/utils/date.ts",
+    "src/utils/time.ts",
+    "src/utils/select.ts",
+    "src/utils/imageSpec.ts",
+    "src/utils/crop.ts",
+    "src/utils/layout.ts",
+    "src/utils/diagnose.ts"
+  ]
+}
